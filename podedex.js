@@ -244,7 +244,7 @@ function init(){
         const cardPesoSpan= document.createElement('span');
         const cardAlturaSpan= document.createElement('span');
 
-        cardImg.setAttribute('src', "pokeball.png");
+        cardImg.setAttribute('src', "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/2052px-Pok%C3%A9_Ball_icon.svg.png");
         cardImg.setAttribute('alt', NOT_IMAGE_TEXT);
         cardImg.setAttribute('width', '150px"');
 
