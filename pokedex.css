@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.parent {
+    display: grid;
+    grid-template-columns: 0.5fr repeat(6, 1fr) 0.5fr;
+    grid-template-rows: 0.2fr 0.2fr 0.5fr  repeat(3, 1fr) 0.2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 6px;
+    }
+
+    .headerTitle { grid-area: 2 / 4 / 3 / 8; }
+    .pokedexInfo { grid-area: 3 / 2 / 7 / 4; }
+    .generationPokedex { grid-area: 3 / 4 / 4 / 8; }
+    .cardsPokedex { grid-area: 4 / 4 / 7 / 8; }
+
+
+.cardsPokedex{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.headerTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generationPokedex img {
+    width: 2.5vw;
+    height: 4.5vh;
+}
+
+.generationPokedex {
+    font-size: 0.8em;
+}
+
+body {
+    background-image: url(fondo.jpeg);
+    /*background-image: url(https://p4.wallpaperbetter.com/wallpaper/129/802/387/pokeballs-pokedex-pokemon-wallpaper-preview.jpg);*/
+    background-repeat: none;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+    color:aliceblue;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.42857143;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardInfo p span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.panel-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.regions {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    /*grid-template-rows: repeat(2,1fr);*/
+}
+
+.item-region {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.regions button {   /*estos son los botones que indican la region que queremos ver*/
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-family: "Press Start 2P";
+    font-size: xx-small;
+}
+
+.regions :hover {
+    cursor: pointer;
+    border: 1px transparent;
+}
+
+.icon-region {
+    width: calc(100% - 9.8vw);
+}
+
+.pokemon-list {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 50vh;
+    width: 50vw;
+    overflow-y: scroll;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    font-size: 0.7rem;
+}
+
+.pokedexInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.centerCard {
+    font-family: "Press Start 2P";
+    background-color: transparent;
+    background-image: url(pokemonFont.svg);
+    background-size: contain;
+    border-color: whitesmoke;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dataPokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.dataPokemon span{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4em;
+    background-color: black;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 0.5px;
+
+}
+
+button:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    border: 3px solid #f03e33;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+    width: max-content;
+}
+
+.search-bar input {
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    height: auto;
+    width: auto;
+    box-shadow: 0px 0px 10px #e9f0f8;
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-pagination{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    height: auto;
+    background-color: black;
+    border: 1px solid black;
+    font-family: "Press Start 2P";
+    font-size: xx-small;
+}
+
+.pagination :hover{
+    cursor: pointer;
+    background-color: #f03e33;
+    border: 1px solid whitesmoke;
+}
+

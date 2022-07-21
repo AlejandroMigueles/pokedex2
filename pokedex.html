@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/287/287221.png">
+    <link rel="stylesheet" href="pokedex.css">
+    <title> Pokedex</title>
+</head>
+<body>
+
+        <div class="parent">
+            <div class="headerTitle">
+                <img class="title" src="title.png" alt="title" height="90vh" width="200vw">
+            </div>
+            <div class="pokedexInfo">
+                <section class="search-bar">
+                    <input id="search" type="text" placeholder="¿qué pokemon buscas?" />
+                    <!-- <select name="busquedaPor" id="searchBy">
+                        <option value="name">Nombre</option>
+                        <option value="type">tipo</option>
+                    </select> -->
+                </section>
+    
+                <section>
+                    <div class="container">
+                            <div class="cardInfo" id="cardInfo">
+                                <!-- <h2>Nombre</h2>
+                                <div class="cardImage">
+                                    <img src="./assets/img/pokeball.png" alt="pokemon" width="150px">
+                                </div>
+                                <p>
+                                    <span>Tipo:</span>
+                                    <span>Altura:</span>
+                                    <span>Peso:</span>
+                                    <span>Generación:</span>
+                                    <span>Descripción:</span>
+                                </p> -->
+                            </div>
+                    </div>
+                </section>
+            </div>
+            <div class="generationPokedex">
+                <section class="regions">
+                    <button type="radio" id="buttonKanto" name="buttonRegion">
+                        <img class="icon-region" src="pokeball.png" alt="imagen pokedex">
+                        <span class="bold">Kanto</span>
+                        <span>(151)</span>
+                    </button>
+                    <button  type="radio" id="buttonJohto" name="buttonRegion">
+                        <img class="icon-region" src="pokeball.png" alt="imagen pokedex">
+                        <span class="bold">Johto</span>
+                        <span>(100)</span>
+                    </button>
+                    <button type="radio" id="buttonHoenn" name="buttonRegion">
+                        <img class="icon-region" src="pokeball.png" alt="imagen pokedex">
+                        <span class="bold">Hoenn</span>
+                        <span>(131)</span>
+                    </button>
+                    <button type="radio" id="buttonSinnoh" name="buttonRegion">
+                            <img class="icon-region" src="pokeball.png" alt="imagen pokedex">
+                            <span class="bold">Sinnoh</span>
+                            <span>(151)</span>
+                    </button>
+                    <button type="radio" id="buttonTeselia" name="buttonRegion">
+                            <img class="icon-region" src="pokeball.png" alt="imagen pokedex">
+                            <span class="bold">Teselia</span>
+                            <span>(155)</span>
+                    </button>
+                    <button type="radio" id="buttonKalos" name="buttonRegion">
+                            <img class="icon-region" src="pokeball.png" alt="imagen pokedex">
+                            <span class="bold">Kalos</span>
+                            <span>(457)</span>
+                    </button>
+                    <button type="radio" id="buttonAlola" name="buttonRegion">
+                            <img class="icon-region" src="pokeball.png" alt="imagen pokedex">
+                            <span class="bold">Alola</span>
+                            <span>(302)</span>
+                    </button>
+                    <button type="radio" id="buttonGalar" name="buttonRegion">
+                            <img class="icon-region" src="pokeball.png" alt="imagen pokedex">
+                            <span class="bold">Galar</span>
+                            <span>(400)</span>
+                    </button>
+                </section>
+            </div>
+            <div class="cardsPokedex">
+                <main id="container-pokemons" class="pokemon-list">
+                </main>
+                <div class="pagination">
+                    <!-- botones de siguiente y anterior -->
+                    <button class="btn-pagination" id="btnPrev">
+                        Previous
+                    </button>
+                    <button class="btn-pagination" id="btnNext">
+                        Next
+                    </button>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="podedex.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</html>
