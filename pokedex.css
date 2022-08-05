@@ -37,8 +37,7 @@
 }
 
 body {
-    background-image: url(/assets/img/fondo.jpeg);
-    /*background-image: url(https://p4.wallpaperbetter.com/wallpaper/129/802/387/pokeballs-pokedex-pokemon-wallpaper-preview.jpg);*/
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/129/802/387/pokeballs-pokedex-pokemon-wallpaper-preview.jpg);
     background-repeat: none;
     background-size: cover;
     font-family: 'Press Start 2P', cursive;
@@ -121,7 +120,7 @@ body {
 .centerCard {
     font-family: "Press Start 2P";
     background-color: transparent;
-    background-image: url(/assets/img/pokemonFont.svg);
+    background-image: url(fondo.svg);
     background-size: contain;
     border-color: whitesmoke;
     border-radius: 5px;

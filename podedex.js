@@ -309,7 +309,7 @@ function init(){
     const cardAlturaSpan= document.createElement('span');
     const description=document.createElement('span');
 
-    cardImg.setAttribute('src', "./assets/img/pokeball.png");
+    cardImg.setAttribute('src', "https://i.pinimg.com/originals/e3/4f/ac/e34facd1e788d09f2bfcbc2f37f548ce.png");
     cardImg.setAttribute('alt', NOT_IMAGE_TEXT);
     cardImg.setAttribute('width', '150px"');
 
